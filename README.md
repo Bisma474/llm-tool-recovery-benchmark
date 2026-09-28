@@ -8,7 +8,7 @@ The current revised study uses a controlled Python harness with inventory-retrie
 - prompted JSON output vs schema-constrained output,
 - verified task success supported by executed tool evidence.
 
-Current development runs include local Ollama experiments with `qwen3:4b` and `llama3.2:3b`.
+Current development runs include local Ollama experiments with `qwen3:4b` and `llama3.2:3b` across seeds 42 and 43, for 400 completed real model episodes.
 
 ## Current Status
 
@@ -22,7 +22,7 @@ Completed so far:
 - local Ollama integration,
 - analysis script,
 - first paper draft,
-- two local model families tested.
+- two local model families tested across two seeds each.
 
 ## Key Files
 

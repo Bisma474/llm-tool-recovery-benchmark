@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Large language model agents often need to recover from failed or unreliable tool calls, but it is unclear how much recovery depends on the representation of execution history and how much depends on the model being forced to produce executable responses. This project studies tool-failure recovery in a controlled local harness where each episode supplies a task, a tool catalog, an initial unreliable attempt, and a fixed recovery budget. We compare four conditions in a 2 x 2 design: plain key-value execution history versus structured JSON history, and prompted JSON output versus enforced response-schema output. In two 100-episode development pilots using local `qwen3:4b` and `llama3.2:3b`, schema-constrained generation generally improved verified task success, but the pattern varied by model. For `qwen3:4b`, success increased from 0/25 and 2/25 in JSON mode to 15/25 and 15/25 in schema mode. For `llama3.2:3b`, success increased from 6/25 and 8/25 in JSON mode to 11/25 and 13/25 in schema mode. Structured JSON history did not consistently improve recovery, though it helped `llama3.2:3b` modestly. The study remains preliminary because it uses two small local models, one seed per model, and a synthetic inventory environment.
+Large language model agents often need to recover from failed or unreliable tool calls, but it is unclear how much recovery depends on the representation of execution history and how much depends on the model being forced to produce executable responses. This project studies tool-failure recovery in a controlled local harness where each episode supplies a task, a tool catalog, an initial unreliable attempt, and a fixed recovery budget. We compare four conditions in a 2 x 2 design: plain key-value execution history versus structured JSON history, and prompted JSON output versus enforced response-schema output. In four 100-episode development pilots using local `qwen3:4b` and `llama3.2:3b` across two seeds each, schema-constrained generation generally improved verified task success, but the pattern varied by model. For `qwen3:4b`, success increased from 0/25 and 2/25 in JSON mode to 15/25 and 15/25 in schema mode on both seeds. For `llama3.2:3b`, success increased from 6/25 and 8/25 in JSON mode to 11/25 and 13/25 in schema mode on both seeds. Structured JSON history did not consistently improve recovery, though it helped `llama3.2:3b` modestly. The study remains preliminary because it uses two small local models, two seeds per model, and a synthetic inventory environment.
 
 ## Introduction
 
@@ -54,22 +54,22 @@ The experiment uses a 2 x 2 design:
 
 The same canonical observation record is rendered into both history formats. The same task facts, tool catalog, failure observations, budgets, and scoring rules are used across paired conditions. In all conditions, the system prompt describes the same response schema. Conditions C and D additionally pass the schema to the backend for constrained generation.
 
-The pilots used local Ollama with `qwen3:4b` and `llama3.2:3b`, temperature 0, seed 42, 4096 context tokens, 256 output tokens, and `think=false`. Each model completed 100 episodes: 25 scenarios under each of the four conditions.
+The pilots used local Ollama with `qwen3:4b` and `llama3.2:3b`, temperature 0, seeds 42 and 43, 4096 context tokens, 256 output tokens, and `think=false`. Each model-seed pair completed 100 episodes: 25 scenarios under each of the four conditions.
 
 ## Results
 
-The main result is that schema-constrained generation improved verified task success for both models, with a larger effect for `qwen3:4b`:
+The main result is that schema-constrained generation improved verified task success for both models, and the success counts were stable across seeds 42 and 43:
 
-| Model | Condition | History | Output mode | Successes | Success rate | Response errors |
-| --- | --- | --- | --- | ---: | ---: | ---: |
-| `qwen3:4b` | A | plain | json | 0/25 | 0.0% | 36 |
-| `qwen3:4b` | B | structured | json | 2/25 | 8.0% | 38 |
-| `qwen3:4b` | C | plain | schema | 15/25 | 60.0% | 1 |
-| `qwen3:4b` | D | structured | schema | 15/25 | 60.0% | 0 |
-| `llama3.2:3b` | A | plain | json | 6/25 | 24.0% | 50 |
-| `llama3.2:3b` | B | structured | json | 8/25 | 32.0% | 20 |
-| `llama3.2:3b` | C | plain | schema | 11/25 | 44.0% | 40 |
-| `llama3.2:3b` | D | structured | schema | 13/25 | 52.0% | 0 |
+| Model | Seeds | Condition | History | Output mode | Successes | Success rate |
+| --- | --- | --- | --- | --- | ---: | ---: |
+| `qwen3:4b` | 42, 43 | A | plain | json | 0/50 | 0.0% |
+| `qwen3:4b` | 42, 43 | B | structured | json | 4/50 | 8.0% |
+| `qwen3:4b` | 42, 43 | C | plain | schema | 30/50 | 60.0% |
+| `qwen3:4b` | 42, 43 | D | structured | schema | 30/50 | 60.0% |
+| `llama3.2:3b` | 42, 43 | A | plain | json | 12/50 | 24.0% |
+| `llama3.2:3b` | 42, 43 | B | structured | json | 16/50 | 32.0% |
+| `llama3.2:3b` | 42, 43 | C | plain | schema | 22/50 | 44.0% |
+| `llama3.2:3b` | 42, 43 | D | structured | schema | 26/50 | 52.0% |
 
 For `qwen3:4b`, the scenario-type breakdown shows a clean split: schema mode solved invalid-argument, temporary-timeout, and malformed-output cases, but not persistent unavailability or stale output:
 
@@ -98,15 +98,15 @@ The result does not support a broad claim that structured execution history alon
 
 ## Limitations
 
-This is a development pilot, not final paper evidence. It uses two small local models, one seed per model, and one synthetic inventory domain. The 25 scenarios are controlled and useful for debugging, but they are not a broad benchmark of real-world tool use. The repeated scenario templates also mean the 100 episodes per model should not be treated as 100 fully independent tasks.
+This is a development pilot, not final paper evidence. It uses two small local models, two seeds per model, and one synthetic inventory domain. The 25 scenarios are controlled and useful for debugging, but they are not a broad benchmark of real-world tool use. The repeated scenario templates also mean the 100 episodes per model-seed pair should not be treated as 100 fully independent tasks.
 
 The harness supplies a notice that the initial attempt did not reliably complete the task. Therefore, this study evaluates recovery after a supplied unreliable attempt; it does not evaluate autonomous failure detection. The current environment also has a reliable backup source, which simplifies some recovery paths.
 
-The runs do not yet include repeated seeds, held-out scenario templates, cluster-aware uncertainty estimates, a larger model with reliable schema enforcement, or a systematic related-work comparison. These are necessary before making a strong publication claim.
+The runs do not yet include held-out scenario templates, cluster-aware uncertainty estimates, a larger model with reliable schema enforcement, or a systematic related-work comparison. These are necessary before making a strong publication claim.
 
 ## Future Work
 
-The next step is to add a stronger model with reliable schema enforcement or repeat these two model runs across additional seeds. Cloud models tested through the current Ollama path were accessible, but did not pass the strict schema-enforcement probe, so they should not be used for the main A/B/C/D comparison until that issue is resolved.
+The next step is to add a stronger model with reliable schema enforcement or expand the benchmark with held-out scenario templates. Cloud models tested through the current Ollama path were accessible, but did not pass the strict schema-enforcement probe, so they should not be used for the main A/B/C/D comparison until that issue is resolved.
 
 The benchmark should also be expanded beyond inventory lookup. At least one second task family should require combining outputs from multiple tools or updating state, so success cannot be achieved by simple record retrieval alone. Persistent unavailability and stale-output cases should receive special attention because they remained difficult even with schema enforcement.
 
@@ -114,5 +114,5 @@ For a final study, the protocol should be frozen before held-out evaluation. The
 
 ## Current Status
 
-The revised project has moved from a confounded exploratory prototype to a working controlled development benchmark with two completed local model runs. The code now includes a stateful recovery harness, equivalent evidence renderers, strict response validation, real local-model integration, append-only run logs, and an analysis script. The current evidence is stronger than the first pilot, but the paper still needs repeated runs, held-out scenarios, and a stronger model or external replication before its claims are ready to submit.
+The revised project has moved from a confounded exploratory prototype to a working controlled development benchmark with four completed local model runs: two models across two seeds each. The code now includes a stateful recovery harness, equivalent evidence renderers, strict response validation, real local-model integration, append-only run logs, and an analysis script. The current evidence is stronger than the first pilot, but the paper still needs held-out scenarios, a stronger model or external replication, and uncertainty estimates before its claims are ready to submit.
 
