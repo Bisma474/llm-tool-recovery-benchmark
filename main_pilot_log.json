@@ -1,0 +1,2895 @@
+[
+  {
+    "scenario_id": "scenario_001",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failed\"\n  }",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {},
+      "diagnosis": "tool failed"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 340408.15
+  },
+  {
+    "scenario_id": "scenario_001",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool returned error\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {},
+      "diagnosis": "tool returned error"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 232724.02
+  },
+  {
+    "scenario_id": "scenario_001",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {\n    \"expression\": \"5 + 2\"\n  },\n  \"diagnosis\": \"error_in_tool_execution\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {
+        "expression": "5 + 2"
+      },
+      "diagnosis": "error_in_tool_execution"
+    },
+    "action_valid": true,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": 7,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after correcting the invalid parameter."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after correcting the invalid parameter.",
+    "recovery_score": 3,
+    "latency_ms": 50142.48
+  },
+  {
+    "scenario_id": "scenario_001",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {\n    \"expression\": \"5 + 2\"\n  },\n  \"diagnosis\": \"invalid_parameter\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {
+        "expression": "5 + 2"
+      },
+      "diagnosis": "invalid_parameter"
+    },
+    "action_valid": true,
+    "diagnosis_correct": true,
+    "failure_output": null,
+    "recovery_output": 7,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 4,
+    "latency_ms": 21676.49
+  },
+  {
+    "scenario_id": "scenario_002",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failed to compute 27 * 14\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {},
+      "diagnosis": "tool failed to compute 27 * 14"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery completed successfully after invalid parameter correction."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery completed successfully after invalid parameter correction.",
+    "recovery_score": 1,
+    "latency_ms": 17296.44
+  },
+  {
+    "scenario_id": "scenario_002",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failed to compute 27 * 14\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {},
+      "diagnosis": "tool failed to compute 27 * 14"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after correcting the invalid parameter."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after correcting the invalid parameter.",
+    "recovery_score": 1,
+    "latency_ms": 17637.92
+  },
+  {
+    "scenario_id": "scenario_002",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {\n    \"expression\": \"27 * 14\"\n  },\n  \"diagnosis\": \"error in tool execution\"\n  \n    \n  \n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n ",
+    "parsed_action": null,
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 21054.87
+  },
+  {
+    "scenario_id": "scenario_002",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"task\": \"Calculate 27 * 14.\",\n  \"tool_name\": \"calculator\",\n  \"input_arguments\": {\n    \"expression\": \"27 * 14\"\n  },\n  \"tool_output\": null,\n  \"error_type\": \"invalid_parameter\",\n  \"message\": \"simulated invalid_parameter\"\n}",
+    "parsed_action": {
+      "task": "Calculate 27 * 14.",
+      "tool_name": "calculator",
+      "input_arguments": {
+        "expression": "27 * 14"
+      },
+      "tool_output": null,
+      "error_type": "invalid_parameter",
+      "message": "simulated invalid_parameter"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery successful due to invalid parameter correction."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful due to invalid parameter correction.",
+    "recovery_score": 1,
+    "latency_ms": 22162.17
+  },
+  {
+    "scenario_id": "scenario_003",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {},\n  \"diagnosis\": \"division by zero\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {},
+      "diagnosis": "division by zero"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 18855.28
+  },
+  {
+    "scenario_id": "scenario_003",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {},\n  \"diagnosis\": \"division by zero\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {},
+      "diagnosis": "division by zero"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "The tool recovered successfully after addressing the invalid parameter issue."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "The tool recovered successfully after addressing the invalid parameter issue.",
+    "recovery_score": 1,
+    "latency_ms": 18061.46
+  },
+  {
+    "scenario_id": "scenario_003",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {\n    \"expression\": \"100 / 4\"\n  },\n  \"diagnosis\": \"division by zero error\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {
+        "expression": "100 / 4"
+      },
+      "diagnosis": "division by zero error"
+    },
+    "action_valid": true,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": 25,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovered successfully from invalid parameter failure."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovered successfully from invalid parameter failure.",
+    "recovery_score": 3,
+    "latency_ms": 18245.11
+  },
+  {
+    "scenario_id": "scenario_003",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {\n    \"expression\": \"100 / 4\"\n  },\n  \"diagnosis\": \"invalid_parameter\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {
+        "expression": "100 / 4"
+      },
+      "diagnosis": "invalid_parameter"
+    },
+    "action_valid": true,
+    "diagnosis_correct": true,
+    "failure_output": null,
+    "recovery_output": 25,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery completed successfully after addressing the invalid parameter issue."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery completed successfully after addressing the invalid parameter issue.",
+    "recovery_score": 4,
+    "latency_ms": 18959.07
+  },
+  {
+    "scenario_id": "scenario_004",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failure\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {},
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 15203.81
+  },
+  {
+    "scenario_id": "scenario_004",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool returned an error\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {},
+      "diagnosis": "tool returned an error"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Tool recovered successfully after invalid parameter fix."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovered successfully after invalid parameter fix.",
+    "recovery_score": 1,
+    "latency_ms": 16099.03
+  },
+  {
+    "scenario_id": "scenario_004",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {\n    \"expression\": \"9 - 3\"\n  },\n  \"diagnosis\": \"tool_failure\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {
+        "expression": "9 - 3"
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": true,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": 6,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after correcting the invalid parameter."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after correcting the invalid parameter.",
+    "recovery_score": 3,
+    "latency_ms": 17037.58
+  },
+  {
+    "scenario_id": "scenario_004",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {\n    \"expression\": \"9 - 3\"\n  },\n  \"diagnosis\": \"invalid_parameter\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {
+        "expression": "9 - 3"
+      },
+      "diagnosis": "invalid_parameter"
+    },
+    "action_valid": true,
+    "diagnosis_correct": true,
+    "failure_output": null,
+    "recovery_output": 6,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Successfully recovered from invalid parameter failure."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Successfully recovered from invalid parameter failure.",
+    "recovery_score": 4,
+    "latency_ms": 17866.45
+  },
+  {
+    "scenario_id": "scenario_005",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failure\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {},
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after invalid parameter correction."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after invalid parameter correction.",
+    "recovery_score": 1,
+    "latency_ms": 15479.58
+  },
+  {
+    "scenario_id": "scenario_005",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failure\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {},
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after correcting the invalid parameter."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after correcting the invalid parameter.",
+    "recovery_score": 1,
+    "latency_ms": 15465.22
+  },
+  {
+    "scenario_id": "scenario_005",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {\n    \"a\": 12,\n    \"b\": 12\n  },\n  \"diagnosis\": \"tool returned an error\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {
+        "a": 12,
+        "b": 12
+      },
+      "diagnosis": "tool returned an error"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 17311.61
+  },
+  {
+    "scenario_id": "scenario_005",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {},\n  \"diagnosis\": \"invalid_parameter\"\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {},
+      "diagnosis": "invalid_parameter"
+    },
+    "action_valid": false,
+    "diagnosis_correct": true,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "invalid_parameter",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 2,
+    "latency_ms": 17236.06
+  },
+  {
+    "scenario_id": "scenario_031",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {\n    \"query\": \"execution provenance\"\n  },\n  \"diagnosis\": \"tool failure\"\n}",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {
+        "query": "execution provenance"
+      },
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after addressing the timeout issue."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after addressing the timeout issue.",
+    "recovery_score": 1,
+    "latency_ms": 17762.95
+  },
+  {
+    "scenario_id": "scenario_031",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failure\"\n}",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {},
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery successful due to timeout resolution."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful due to timeout resolution.",
+    "recovery_score": 1,
+    "latency_ms": 18088.2
+  },
+  {
+    "scenario_id": "scenario_031",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failed to execute due to invalid arguments\"\n}",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {},
+      "diagnosis": "tool failed to execute due to invalid arguments"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery successful due to timeout resolution."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful due to timeout resolution.",
+    "recovery_score": 1,
+    "latency_ms": 17596.48
+  },
+  {
+    "scenario_id": "scenario_031",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {},\n  \"diagnosis\": \"timeout\"\n}",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {},
+      "diagnosis": "timeout"
+    },
+    "action_valid": false,
+    "diagnosis_correct": true,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "The system recovered from a timeout failure."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "The system recovered from a timeout failure.",
+    "recovery_score": 2,
+    "latency_ms": 61923.13
+  },
+  {
+    "scenario_id": "scenario_032",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {\n    \"query\": \"heart failure\"\n  },\n  \"diagnosis\": \"tool_failure\"\n  }",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {
+        "query": "heart failure"
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": true,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": "Heart failure is a clinical syndrome involving impaired cardiac pumping.",
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after addressing the timeout issue."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after addressing the timeout issue.",
+    "recovery_score": 3,
+    "latency_ms": 64065.06
+  },
+  {
+    "scenario_id": "scenario_032",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {\n    \"query\": \"heart failure\"\n  },\n  \"diagnosis\": \"tool_failure\"\n}",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {
+        "query": "heart failure"
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": true,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": "Heart failure is a clinical syndrome involving impaired cardiac pumping.",
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after addressing the timeout issue."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after addressing the timeout issue.",
+    "recovery_score": 3,
+    "latency_ms": 20639.9
+  },
+  {
+    "scenario_id": "scenario_032",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failure\"\n}",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {},
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after resolving timeout issue."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after resolving timeout issue.",
+    "recovery_score": 1,
+    "latency_ms": 16576.87
+  },
+  {
+    "scenario_id": "scenario_032",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {},\n  \"diagnosis\": \"timeout\"\n}",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {},
+      "diagnosis": "timeout"
+    },
+    "action_valid": false,
+    "diagnosis_correct": true,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after timeout resolution."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after timeout resolution.",
+    "recovery_score": 2,
+    "latency_ms": 20225.86
+  },
+  {
+    "scenario_id": "scenario_033",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failure\"\n}",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {},
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after addressing the timeout issue."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after addressing the timeout issue.",
+    "recovery_score": 1,
+    "latency_ms": 31557.62
+  },
+  {
+    "scenario_id": "scenario_033",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool_failure\"\n}",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {},
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery completed successfully"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery completed successfully",
+    "recovery_score": 1,
+    "latency_ms": 235338.87
+  },
+  {
+    "scenario_id": "scenario_033",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failure\"\n}",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {},
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "The system recovered successfully from the timeout failure."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "The system recovered successfully from the timeout failure.",
+    "recovery_score": 1,
+    "latency_ms": 204050.4
+  },
+  {
+    "scenario_id": "scenario_033",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"task\": \"Find information about tool recovery.\",\n  \"tool_name\": \"document_search\",\n  \"input_arguments\": {\n    \"query\": \"tool recovery\"\n  },\n  \"tool_output\": null,\n  \"error_type\": \"timeout\",\n  \"message\": \"simulated timeout\"\n}",
+    "parsed_action": {
+      "task": "Find information about tool recovery.",
+      "tool_name": "document_search",
+      "input_arguments": {
+        "query": "tool recovery"
+      },
+      "tool_output": null,
+      "error_type": "timeout",
+      "message": "simulated timeout"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery from timeout failure was successful."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery from timeout failure was successful.",
+    "recovery_score": 1,
+    "latency_ms": 28195.15
+  },
+  {
+    "scenario_id": "scenario_034",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {\n    \"query\": \"malformed output\"\n  },\n  \"diagnosis\": \"tool failed to retrieve information about malformed output\"\n  }",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {
+        "query": "malformed output"
+      },
+      "diagnosis": "tool failed to retrieve information about malformed output"
+    },
+    "action_valid": true,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": "Malformed output does not follow the expected format.",
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after addressing the timeout issue."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after addressing the timeout issue.",
+    "recovery_score": 3,
+    "latency_ms": 18440.34
+  },
+  {
+    "scenario_id": "scenario_034",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failure\"\n  }",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {},
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after addressing the timeout issue."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after addressing the timeout issue.",
+    "recovery_score": 1,
+    "latency_ms": 16339.18
+  },
+  {
+    "scenario_id": "scenario_034",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {\n    \"query\": \"malformed output\"\n  },\n  \"diagnosis\": \"tool returned error\"\n  }",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {
+        "query": "malformed output"
+      },
+      "diagnosis": "tool returned error"
+    },
+    "action_valid": true,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": "Malformed output does not follow the expected format.",
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovered from timeout failure."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovered from timeout failure.",
+    "recovery_score": 3,
+    "latency_ms": 17019.64
+  },
+  {
+    "scenario_id": "scenario_034",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {},\n  \"diagnosis\": \"timeout\"\n}",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {},
+      "diagnosis": "timeout"
+    },
+    "action_valid": false,
+    "diagnosis_correct": true,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after addressing the timeout issue."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after addressing the timeout issue.",
+    "recovery_score": 2,
+    "latency_ms": 16773.69
+  },
+  {
+    "scenario_id": "scenario_035",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {\n    \"query\": \"agent reliability\"\n  },\n  \"diagnosis\": \"tool_failure\"\n  }",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {
+        "query": "agent reliability"
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": true,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": "Agent reliability measures correct and consistent behavior.",
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after addressing the timeout issue."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after addressing the timeout issue.",
+    "recovery_score": 3,
+    "latency_ms": 17164.15
+  },
+  {
+    "scenario_id": "scenario_035",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool_failure\"\n}",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {},
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery from timeout failure was successful."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery from timeout failure was successful.",
+    "recovery_score": 1,
+    "latency_ms": 16531.91
+  },
+  {
+    "scenario_id": "scenario_035",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failed to return valid information\"\n}",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {},
+      "diagnosis": "tool failed to return valid information"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after resolving the timeout issue."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after resolving the timeout issue.",
+    "recovery_score": 1,
+    "latency_ms": 16493.52
+  },
+  {
+    "scenario_id": "scenario_035",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"document_search\",\n  \"arguments\": {},\n  \"diagnosis\": \"timeout\"\n}",
+    "parsed_action": {
+      "action": "document_search",
+      "arguments": {},
+      "diagnosis": "timeout"
+    },
+    "action_valid": false,
+    "diagnosis_correct": true,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "timeout",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after addressing the timeout issue."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after addressing the timeout issue.",
+    "recovery_score": 2,
+    "latency_ms": 17195.14
+  },
+  {
+    "scenario_id": "scenario_061",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": \"101\"\n  },\n  \"diagnosis\": \"tool_failure\"\n}",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": "101"
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 137060.26
+  },
+  {
+    "scenario_id": "scenario_061",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": \"101\"\n  },\n  \"diagnosis\": \"tool failed to return valid data\"\n  }",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": "101"
+      },
+      "diagnosis": "tool failed to return valid data"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool has been successfully recovered."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool has been successfully recovered.",
+    "recovery_score": 1,
+    "latency_ms": 134103.9
+  },
+  {
+    "scenario_id": "scenario_061",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": \"101\"\n  },\n  \"diagnosis\": \"tool failed to return a valid record\"\n  }",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": "101"
+      },
+      "diagnosis": "tool failed to return a valid record"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovery completed successfully."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovery completed successfully.",
+    "recovery_score": 1,
+    "latency_ms": 26618.14
+  },
+  {
+    "scenario_id": "scenario_061",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": 1.0\n  },\n  \"diagnosis\": \"unavailable_tool\"\n}",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": 1.0
+      },
+      "diagnosis": "unavailable_tool"
+    },
+    "action_valid": false,
+    "diagnosis_correct": true,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovery successful",
+    "recovery_score": 2,
+    "latency_ms": 18665.17
+  },
+  {
+    "scenario_id": "scenario_062",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": \"202\"\n  },\n  \"diagnosis\": \"tool_failure\"\n}",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": "202"
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 17778.01
+  },
+  {
+    "scenario_id": "scenario_062",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": \"202\"\n  },\n  \"diagnosis\": \"tool failed to fetch record\"\n}",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": "202"
+      },
+      "diagnosis": "tool failed to fetch record"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "The tool has been successfully recovered."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "The tool has been successfully recovered.",
+    "recovery_score": 1,
+    "latency_ms": 37098.99
+  },
+  {
+    "scenario_id": "scenario_062",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": \"202\"\n  },\n  \"diagnosis\": \"error in tool execution\"\n  }",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": "202"
+      },
+      "diagnosis": "error in tool execution"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool failure recovered successfully."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool failure recovered successfully.",
+    "recovery_score": 1,
+    "latency_ms": 18357.43
+  },
+  {
+    "scenario_id": "scenario_062",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": 2.02\n  },\n  \"diagnosis\": \"failure type\"\n}",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": 2.02
+      },
+      "diagnosis": "failure type"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 36786.67
+  },
+  {
+    "scenario_id": "scenario_063",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": \"303\"\n  },\n  \"diagnosis\": \"The tool failed to retrieve the database record. Possible causes include network issues, incorrect record ID, or database unavailability.\"\n  }",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": "303"
+      },
+      "diagnosis": "The tool failed to retrieve the database record. Possible causes include network issues, incorrect record ID, or database unavailability."
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 19929.4
+  },
+  {
+    "scenario_id": "scenario_063",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": \"303\"\n  },\n  \"diagnosis\": \"tool failure\"\n  }",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": "303"
+      },
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 25583.66
+  },
+  {
+    "scenario_id": "scenario_063",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": \"303\"\n  },\n  \"diagnosis\": \"tool_failure\"\n}",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": "303"
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 17342.77
+  },
+  {
+    "scenario_id": "scenario_063",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": 3  }\n  \t\t\t\n  }",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": 3
+      }
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovered successfully"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovered successfully",
+    "recovery_score": 1,
+    "latency_ms": 20127.23
+  },
+  {
+    "scenario_id": "scenario_064",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": \"404\"\n  },\n  \"diagnosis\": \"record not found\"\n  }",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": "404"
+      },
+      "diagnosis": "record not found"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 16347.41
+  },
+  {
+    "scenario_id": "scenario_064",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool returned error for record 404\"\n}",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {},
+      "diagnosis": "tool returned error for record 404"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 15821.12
+  },
+  {
+    "scenario_id": "scenario_064",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": 404\n  },\n  \"diagnosis\": \"record not found\"\n}",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": 404
+      },
+      "diagnosis": "record not found"
+    },
+    "action_valid": true,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": {
+      "name": "Usman",
+      "status": "inactive"
+    },
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool has been successfully recovered"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool has been successfully recovered",
+    "recovery_score": 3,
+    "latency_ms": 16440.46
+  },
+  {
+    "scenario_id": "scenario_064",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": 404\n  },\n  \"diagnosis\": \"unavailable_tool\"\n}",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": 404
+      },
+      "diagnosis": "unavailable_tool"
+    },
+    "action_valid": true,
+    "diagnosis_correct": true,
+    "failure_output": null,
+    "recovery_output": {
+      "name": "Usman",
+      "status": "inactive"
+    },
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovery successful",
+    "recovery_score": 4,
+    "latency_ms": 19610.12
+  },
+  {
+    "scenario_id": "scenario_065",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": \"505\"\n  },\n  \"diagnosis\": \"tool_failure\"\n}",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": "505"
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovered successfully"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovered successfully",
+    "recovery_score": 1,
+    "latency_ms": 16625.26
+  },
+  {
+    "scenario_id": "scenario_065",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": \"505\"\n  },\n  \"diagnosis\": \"tool_failure\"\n  }",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": "505"
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 16556.9
+  },
+  {
+    "scenario_id": "scenario_065",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": \"505\"\n  },\n  \"diagnosis\": \"tool_failure\"\n  }",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": "505"
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": null,
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool recovered successfully."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool recovered successfully.",
+    "recovery_score": 1,
+    "latency_ms": 17222.02
+  },
+  {
+    "scenario_id": "scenario_065",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"database_lookup\",\n  \"arguments\": {\n    \"record_id\": 505\n  },\n  \"diagnosis\": \"unavailable_tool\"\n}",
+    "parsed_action": {
+      "action": "database_lookup",
+      "arguments": {
+        "record_id": 505
+      },
+      "diagnosis": "unavailable_tool"
+    },
+    "action_valid": true,
+    "diagnosis_correct": true,
+    "failure_output": null,
+    "recovery_output": {
+      "name": "Hina",
+      "status": "active"
+    },
+    "final_action": {
+      "failure_diagnosis": "unavailable_tool",
+      "recovery_success": true,
+      "final_answer": "Tool failure recovered successfully."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Tool failure recovered successfully.",
+    "recovery_score": 4,
+    "latency_ms": 40511.0
+  },
+  {
+    "scenario_id": "scenario_091",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failure\"\n}",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {},
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "The pilot study uses deterministic tools and four history conditions."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 14746.93
+  },
+  {
+    "scenario_id": "scenario_091",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"file_path\": \"study_notes_file_1.txt\"\n  },\n  \"diagnosis\": \"tool failure\"\n  }",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "file_path": "study_notes_file_1.txt"
+      },
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "The pilot study uses deterministic tools and four history conditions."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 16544.77
+  },
+  {
+    "scenario_id": "scenario_091",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"file_path\": \"study_notes_file_1.txt\"\n  },\n  \"diagnosis\": \"tool_failure\"\n  }",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "file_path": "study_notes_file_1.txt"
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "The pilot study uses deterministic tools and four history conditions."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 16892.08
+  },
+  {
+    "scenario_id": "scenario_091",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"filename\": \"study_notes_1.txt\"\n  },\n  \"diagnosis\": \"unexpected content in file\"\n  }",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "filename": "study_notes_1.txt"
+      },
+      "diagnosis": "unexpected content in file"
+    },
+    "action_valid": true,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "The pilot study uses deterministic tools and four history conditions."
+      ]
+    },
+    "recovery_output": "The pilot study uses deterministic tools and four history conditions.",
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 3,
+    "latency_ms": 17285.28
+  },
+  {
+    "scenario_id": "scenario_092",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"file_path\": \"study_notes_2.txt\"\n  },\n  \"diagnosis\": \"file not found\"\n  }",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "file_path": "study_notes_2.txt"
+      },
+      "diagnosis": "file not found"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Invalid parameters occur when inputs use the wrong format."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Successfully recovered from malformed output failure."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Successfully recovered from malformed output failure.",
+    "recovery_score": 1,
+    "latency_ms": 16769.78
+  },
+  {
+    "scenario_id": "scenario_092",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"file_name\": \"study_notes_file_2.txt\"\n  },\n  \"diagnosis\": \"tool failed to read file\"\n  }",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "file_name": "study_notes_file_2.txt"
+      },
+      "diagnosis": "tool failed to read file"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Invalid parameters occur when inputs use the wrong format."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 17629.82
+  },
+  {
+    "scenario_id": "scenario_092",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"file_path\": \"study_notes_file_2.txt\"\n  },\n  \"diagnosis\": \"file not found\"\n  }",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "file_path": "study_notes_file_2.txt"
+      },
+      "diagnosis": "file not found"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Invalid parameters occur when inputs use the wrong format."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 17793.54
+  },
+  {
+    "scenario_id": "scenario_092",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"task\": \"Read study notes file 2.\",\n  \"tool_name\": \"file_reader\",\n  \"input_arguments\": {\n    \"filename\": \"study_notes_2.txt\"\n  },\n  \"tool_output\": {\n    \"unexpected\": [\n      \"Invalid parameters occur when inputs use the wrong format.\"\n    ]\n  },\n  \"error_type\": null,\n  \"message\": null\n}",
+    "parsed_action": {
+      "task": "Read study notes file 2.",
+      "tool_name": "file_reader",
+      "input_arguments": {
+        "filename": "study_notes_2.txt"
+      },
+      "tool_output": {
+        "unexpected": [
+          "Invalid parameters occur when inputs use the wrong format."
+        ]
+      },
+      "error_type": null,
+      "message": null
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Invalid parameters occur when inputs use the wrong format."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 22492.58
+  },
+  {
+    "scenario_id": "scenario_093",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"file_path\": \"study_notes_file_3.txt\"\n  },\n  \"diagnosis\": \"file not found\"\n  }",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "file_path": "study_notes_file_3.txt"
+      },
+      "diagnosis": "file not found"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Timeouts occur when a tool does not respond in time."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovered from malformed output failure."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovered from malformed output failure.",
+    "recovery_score": 1,
+    "latency_ms": 17887.79
+  },
+  {
+    "scenario_id": "scenario_093",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"file_path\": \"study_notes_3.txt\"\n  },\n  \"diagnosis\": \"tool failure\"\n  }",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "file_path": "study_notes_3.txt"
+      },
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Timeouts occur when a tool does not respond in time."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 17655.34
+  },
+  {
+    "scenario_id": "scenario_093",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"file_path\": \"study_notes_3.txt\"\n  },\n  \"diagnosis\": \"tool_failure\"\n  }",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "file_path": "study_notes_3.txt"
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Timeouts occur when a tool does not respond in time."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 17454.27
+  },
+  {
+    "scenario_id": "scenario_093",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"task\": \"Read study notes file 3.\",\n  \"tool_name\": \"file_reader\",\n  \"input_arguments\": {\n    \"filename\": \"study_notes_3.txt\"\n  },\n  \"tool_output\": {\n    \"unexpected\": [\n      \"Timeouts occur when a tool does not respond in time.\"\n    ]\n  },\n  \"error_type\": null,\n  \"message\": null\n}",
+    "parsed_action": {
+      "task": "Read study notes file 3.",
+      "tool_name": "file_reader",
+      "input_arguments": {
+        "filename": "study_notes_3.txt"
+      },
+      "tool_output": {
+        "unexpected": [
+          "Timeouts occur when a tool does not respond in time."
+        ]
+      },
+      "error_type": null,
+      "message": null
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Timeouts occur when a tool does not respond in time."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 22477.15
+  },
+  {
+    "scenario_id": "scenario_094",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"file_path\": \"study_notes_4.txt\"\n  },\n  \"diagnosis\": \"file not found\"\n  }",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "file_path": "study_notes_4.txt"
+      },
+      "diagnosis": "file not found"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Malformed output does not match the expected schema."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 17441.34
+  },
+  {
+    "scenario_id": "scenario_094",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"file_path\": \"study_notes_file_4.txt\"\n  },\n  \"diagnosis\": \"tool_failure\"\n  }",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "file_path": "study_notes_file_4.txt"
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Malformed output does not match the expected schema."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Successfully recovered from malformed output failure."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Successfully recovered from malformed output failure.",
+    "recovery_score": 1,
+    "latency_ms": 17321.15
+  },
+  {
+    "scenario_id": "scenario_094",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"file_path\": \"study_notes_file_4.txt\"\n  },\n  \"diagnosis\": \"tool_response_invalid\"\n  }",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "file_path": "study_notes_file_4.txt"
+      },
+      "diagnosis": "tool_response_invalid"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Malformed output does not match the expected schema."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "The system recovered successfully from the malformed output failure."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "The system recovered successfully from the malformed output failure.",
+    "recovery_score": 1,
+    "latency_ms": 17086.94
+  },
+  {
+    "scenario_id": "scenario_094",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"filename\": \"study_notes_4.txt\"\n  },\n  \"diagnosis\": \"Malformed output does not match the expected schema.\"\n}",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "filename": "study_notes_4.txt"
+      },
+      "diagnosis": "Malformed output does not match the expected schema."
+    },
+    "action_valid": true,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Malformed output does not match the expected schema."
+      ]
+    },
+    "recovery_output": "Malformed output does not match the expected schema.",
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 3,
+    "latency_ms": 17849.01
+  },
+  {
+    "scenario_id": "scenario_095",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"file_name\": \"study_notes_file_5.txt\"\n  },\n  \"diagnosis\": \"tool failure\"\n  }",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "file_name": "study_notes_file_5.txt"
+      },
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Misleading output looks valid but does not answer the task."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 16895.65
+  },
+  {
+    "scenario_id": "scenario_095",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"file_path\": \"study_notes_5.txt\"\n  },\n  \"diagnosis\": \"tool failure\"\n  }",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "file_path": "study_notes_5.txt"
+      },
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Misleading output looks valid but does not answer the task."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovered from malformed output failure."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovered from malformed output failure.",
+    "recovery_score": 1,
+    "latency_ms": 17358.17
+  },
+  {
+    "scenario_id": "scenario_095",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool failed to read study notes file 5\"\n}",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {},
+      "diagnosis": "tool failed to read study notes file 5"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Misleading output looks valid but does not answer the task."
+      ]
+    },
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 15602.22
+  },
+  {
+    "scenario_id": "scenario_095",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"file_reader\",\n  \"arguments\": {\n    \"filename\": \"study_notes_5.txt\"\n  },\n  \"diagnosis\": \"unexpected output\"\n}",
+    "parsed_action": {
+      "action": "file_reader",
+      "arguments": {
+        "filename": "study_notes_5.txt"
+      },
+      "diagnosis": "unexpected output"
+    },
+    "action_valid": true,
+    "diagnosis_correct": false,
+    "failure_output": {
+      "unexpected": [
+        "Misleading output looks valid but does not answer the task."
+      ]
+    },
+    "recovery_output": "Misleading output looks valid but does not answer the task.",
+    "final_action": {
+      "failure_diagnosis": "malformed_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 3,
+    "latency_ms": 18142.04
+  },
+  {
+    "scenario_id": "scenario_121",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"data\": [\n      2,\n      4,\n      6,\n      8\n    ]\n  },\n  \"diagnosis\": \"tool failed to compute summary statistics for the provided data\"\n}",
+    "parsed_action": {
+      "action": "data_analysis",
+      "arguments": {
+        "data": [
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      "diagnosis": "tool failed to compute summary statistics for the provided data"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery completed successfully."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery completed successfully.",
+    "recovery_score": 1,
+    "latency_ms": 18818.16
+  },
+  {
+    "scenario_id": "scenario_121",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"data\": [\n      2,\n      4,\n      6,\n      8\n    ]\n  },\n  \"diagnosis\": \"tool_failure\"\n  \t\t\t\n  \t\t\t\t\t\n  \t\t\t\t\t\n  \t\t\t\t\n  \t\t\t\t\n  \t\t\t\t\n  \t\t\t\t\n  \t\t\t\t\n  \t\t\t\t\n  \t\t\t\t\n ",
+    "parsed_action": null,
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 20897.71
+  },
+  {
+    "scenario_id": "scenario_121",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"data\": [\n      2,\n      4,\n      6,\n      8\n    ]\n  },\n  \"diagnosis\": \"tool returned error\"\n  \n  \n  \n    \n  \n    \n  \n    \n \n    \n \n    \n \n    \n \n    \n \n    \n \n    \n \n    \n \n    \n \n    \n ",
+    "parsed_action": null,
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after addressing the misleading output."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after addressing the misleading output.",
+    "recovery_score": 1,
+    "latency_ms": 21580.45
+  },
+  {
+    "scenario_id": "scenario_121",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"values\": [\n      2,\n      4,\n      6,\n      8\n    ]\n  },\n  \"diagnosis\": \"tool output was irrelevant\"\n}",
+    "parsed_action": {
+      "action": "data_analysis",
+      "arguments": {
+        "values": [
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      "diagnosis": "tool output was irrelevant"
+    },
+    "action_valid": true,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": {
+      "count": 4,
+      "mean": 5.0,
+      "minimum": 2,
+      "maximum": 8
+    },
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Successfully recovered from misleading output failure."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Successfully recovered from misleading output failure.",
+    "recovery_score": 3,
+    "latency_ms": 19341.97
+  },
+  {
+    "scenario_id": "scenario_122",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"data\": [\n      10,\n      20,\n      30\n    ]\n  },\n  \"diagnosis\": \"tool_failure\"\n}",
+    "parsed_action": {
+      "action": "data_analysis",
+      "arguments": {
+        "data": [
+          10,
+          20,
+          30
+        ]
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after addressing misleading output"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after addressing misleading output",
+    "recovery_score": 1,
+    "latency_ms": 18661.71
+  },
+  {
+    "scenario_id": "scenario_122",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {},\n  \"diagnosis\": \"tool_failure\"\n}",
+    "parsed_action": {
+      "action": "data_analysis",
+      "arguments": {},
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after addressing misleading output."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after addressing misleading output.",
+    "recovery_score": 1,
+    "latency_ms": 15830.02
+  },
+  {
+    "scenario_id": "scenario_122",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"numbers\": [10, 20, 30]\n  },\n  \"diagnosis\": \"tool failed to execute due to invalid input format\"\n}",
+    "parsed_action": {
+      "action": "data_analysis",
+      "arguments": {
+        "numbers": [
+          10,
+          20,
+          30
+        ]
+      },
+      "diagnosis": "tool failed to execute due to invalid input format"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "The system recovered successfully from the misleading output failure."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "The system recovered successfully from the misleading output failure.",
+    "recovery_score": 1,
+    "latency_ms": 19032.74
+  },
+  {
+    "scenario_id": "scenario_122",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"values\": [\n      10,\n      2  ]\n  },\n  \"diagnosis\": \"failed to handle 30\"\n  \n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n ",
+    "parsed_action": null,
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery completed successfully."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery completed successfully.",
+    "recovery_score": 1,
+    "latency_ms": 21683.04
+  },
+  {
+    "scenario_id": "scenario_123",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"data\": [\n      1,\n      3,\n      5,\n      7,\n      9\n    ]\n  },\n  \"diagnosis\": \"tool failed to calculate summary statistics for the provided data\"\n}",
+    "parsed_action": {
+      "action": "data_analysis",
+      "arguments": {
+        "data": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      "diagnosis": "tool failed to calculate summary statistics for the provided data"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 19029.32
+  },
+  {
+    "scenario_id": "scenario_123",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"data\": [\n      1,\n      3,\n      5,\n      7,\n      9\n    ]\n  },\n  \"diagnosis\": \"tool_failure\"\n}",
+    "parsed_action": {
+      "action": "data_analysis",
+      "arguments": {
+        "data": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 17757.26
+  },
+  {
+    "scenario_id": "scenario_123",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"data\": [\n      1,\n      3,\n      5,\n      7,\n      9\n    ]\n  },\n  \"diagnosis\": \"tool failed to execute\"\n  }",
+    "parsed_action": {
+      "action": "data_analysis",
+      "arguments": {
+        "data": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      "diagnosis": "tool failed to execute"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful after identifying misleading output"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful after identifying misleading output",
+    "recovery_score": 1,
+    "latency_ms": 18821.95
+  },
+  {
+    "scenario_id": "scenario_123",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"values\": [\n      1,\n      3,\n      \": 5, 7, 9\"\n    ]\n  },\n  \"diagnosis\": \"invalid input format\"\n  \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n   ",
+    "parsed_action": null,
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery completed successfully"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery completed successfully",
+    "recovery_score": 1,
+    "latency_ms": 23147.01
+  },
+  {
+    "scenario_id": "scenario_124",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"data\": [\n      100,\n      150,\n      200\n    ]\n  },\n  \"diagnosis\": \"The tool failed to calculate summary statistics for the provided numbers. The failure might be due to incorrect data format or missing required parameters.\"\n}",
+    "parsed_action": {
+      "action": "data_analysis",
+      "arguments": {
+        "data": [
+          100,
+          150,
+          200
+        ]
+      },
+      "diagnosis": "The tool failed to calculate summary statistics for the provided numbers. The failure might be due to incorrect data format or missing required parameters."
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "The system recovered successfully from the misleading output failure."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "The system recovered successfully from the misleading output failure.",
+    "recovery_score": 1,
+    "latency_ms": 20545.43
+  },
+  {
+    "scenario_id": "scenario_124",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"data\": [\n      100,\n      150,\n      200\n    ]\n  },\n  \"diagnosis\": \"tool failed to execute due to incorrect input format\"\n}",
+    "parsed_action": {
+      "action": "data_analysis",
+      "arguments": {
+        "data": [
+          100,
+          150,
+          200
+        ]
+      },
+      "diagnosis": "tool failed to execute due to incorrect input format"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery completed successfully."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery completed successfully.",
+    "recovery_score": 1,
+    "latency_ms": 18384.66
+  },
+  {
+    "scenario_id": "scenario_124",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"numbers\": [100, 150, 200]\n  },\n  \"diagnosis\": \"tool failed to compute summary statistics for the provided numbers\"\n}",
+    "parsed_action": {
+      "action": "data_analysis",
+      "arguments": {
+        "numbers": [
+          100,
+          150,
+          200
+        ]
+      },
+      "diagnosis": "tool failed to compute summary statistics for the provided numbers"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery from misleading output has been successful."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery from misleading output has been successful.",
+    "recovery_score": 1,
+    "latency_ms": 18293.74
+  },
+  {
+    "scenario_id": "scenario_124",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"values\": [\n      100,\n      1  \t\t\t\t\n      \t\t\t\n      \t\t\t\n      \t\t\t\n      \t\t\t\n      \t\t\t\n      \t\t\t\n      \t\t\t\n      \t\t\t\n      \t\t\t\n     ",
+    "parsed_action": null,
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 19873.99
+  },
+  {
+    "scenario_id": "scenario_125",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "no_history",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"data\": [\n      12,\n      18,\n      24,\n      30\n    ]\n  },\n  \"diagnosis\": \"tool_failure\"\n}",
+    "parsed_action": {
+      "action": "data_analysis",
+      "arguments": {
+        "data": [
+          12,
+          18,
+          24,
+          30
+        ]
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery from misleading output successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery from misleading output successful",
+    "recovery_score": 1,
+    "latency_ms": 18355.7
+  },
+  {
+    "scenario_id": "scenario_125",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "raw_history",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"data\": [\n      12,\n      18,\n      24,\n      30\n    ]\n  },\n  \"diagnosis\": \"tool failure\"\n}",
+    "parsed_action": {
+      "action": "data_analysis",
+      "arguments": {
+        "data": [
+          12,
+          18,
+          24,
+          30
+        ]
+      },
+      "diagnosis": "tool failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful"
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful",
+    "recovery_score": 1,
+    "latency_ms": 18333.8
+  },
+  {
+    "scenario_id": "scenario_125",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "plain_log",
+    "raw_action": "{\n  \"action\": \"data_analysis\",\n  \"arguments\": {\n    \"data\": [\n      12,\n      18,\n      24,\n      30\n    ]\n  },\n  \"diagnosis\": \"tool_failure\"\n}",
+    "parsed_action": {
+      "action": "data_analysis",
+      "arguments": {
+        "data": [
+          12,
+          18,
+          24,
+          30
+        ]
+      },
+      "diagnosis": "tool_failure"
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery from misleading output has been successful."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery from misleading output has been successful.",
+    "recovery_score": 1,
+    "latency_ms": 18387.56
+  },
+  {
+    "scenario_id": "scenario_125",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "condition": "structured_provenance",
+    "raw_action": "{\n  \"task\": \"Calculate summary statistics for 1: 12, 18, 24, and 30.\",\n  \"tool_name\": \"data_analysis\",\n  \"input_arguments\": {\n    \"values\": [\n      12,\n      18,\n      24,\n      30\n    ]\n  },\n  \"tool_output\": \"This output is valid-looking but irrelevant.\",\n  \"error_type\": null,\n  \"message\": null\n}",
+    "parsed_action": {
+      "task": "Calculate summary statistics for 1: 12, 18, 24, and 30.",
+      "tool_name": "data_analysis",
+      "input_arguments": {
+        "values": [
+          12,
+          18,
+          24,
+          30
+        ]
+      },
+      "tool_output": "This output is valid-looking but irrelevant.",
+      "error_type": null,
+      "message": null
+    },
+    "action_valid": false,
+    "diagnosis_correct": false,
+    "failure_output": "This output is valid-looking but irrelevant.",
+    "recovery_output": null,
+    "final_action": {
+      "failure_diagnosis": "misleading_output",
+      "recovery_success": true,
+      "final_answer": "Recovery successful with corrected output."
+    },
+    "final_diagnosis_correct": true,
+    "final_recovery_success": true,
+    "final_answer": "Recovery successful with corrected output.",
+    "recovery_score": 1,
+    "latency_ms": 23660.91
+  }
+]

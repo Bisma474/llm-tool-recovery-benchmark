@@ -1,0 +1,62 @@
+[
+  {
+    "condition": "no_history",
+    "failure_type": "malformed_output",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {\n    \"expression\": \"5 + 2\"\n  }\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {
+        "expression": "5 + 2"
+      }
+    },
+    "action_valid": true,
+    "tool_output": "7",
+    "final_answer": "{\n  \"failure_diagnosis\": \"malformed_output\",\n  \"recovery_success\": true,\n  \"final_answer\": \"5 + 2 = 7\"\n}",
+    "latency_ms": 17924.83
+  },
+  {
+    "condition": "raw_history",
+    "failure_type": "malformed_output",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {\n    \"expression\": \"5 + 2\"\n  }\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {
+        "expression": "5 + 2"
+      }
+    },
+    "action_valid": true,
+    "tool_output": "7",
+    "final_answer": "{\n  \"failure_diagnosis\": \"malformed_output\",\n  \"recovery_success\": true,\n  \"final_answer\": \"5 + 2 = 7\"\n}",
+    "latency_ms": 19011.32
+  },
+  {
+    "condition": "plain_log",
+    "failure_type": "malformed_output",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {\n    \"expression\": \"5 + 2\"\n  }\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {
+        "expression": "5 + 2"
+      }
+    },
+    "action_valid": true,
+    "tool_output": "7",
+    "final_answer": "{\n  \"failure_diagnosis\": \"malformed_output\",\n  \"recovery_success\": true,\n  \"final_answer\": \"5 + 2 = 7\"\n}",
+    "latency_ms": 17669.93
+  },
+  {
+    "condition": "structured_provenance",
+    "failure_type": "malformed_output",
+    "raw_action": "{\n  \"action\": \"calculator\",\n  \"arguments\": {\n    \"expression\": \"5 + 2\"\n  }\n}",
+    "parsed_action": {
+      "action": "calculator",
+      "arguments": {
+        "expression": "5 + 2"
+      }
+    },
+    "action_valid": true,
+    "tool_output": "7",
+    "final_answer": "{\n  \"failure_diagnosis\": \"malformed_output\",\n  \"recovery_success\": true,\n  \"final_answer\": \"5 + 2 = 7\"\n}",
+    "latency_ms": 19235.77
+  }
+]

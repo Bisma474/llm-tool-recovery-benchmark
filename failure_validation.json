@@ -1,0 +1,1392 @@
+[
+  {
+    "scenario_id": "scenario_001",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_002",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_003",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_004",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_005",
+    "tool_name": "calculator",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_006",
+    "tool_name": "calculator",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_007",
+    "tool_name": "calculator",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_008",
+    "tool_name": "calculator",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_009",
+    "tool_name": "calculator",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_010",
+    "tool_name": "calculator",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_011",
+    "tool_name": "calculator",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_012",
+    "tool_name": "calculator",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_013",
+    "tool_name": "calculator",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_014",
+    "tool_name": "calculator",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_015",
+    "tool_name": "calculator",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_016",
+    "tool_name": "calculator",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        7
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_017",
+    "tool_name": "calculator",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        378
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_018",
+    "tool_name": "calculator",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        25
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_019",
+    "tool_name": "calculator",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        6
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_020",
+    "tool_name": "calculator",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        144
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_021",
+    "tool_name": "calculator",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_022",
+    "tool_name": "calculator",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_023",
+    "tool_name": "calculator",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_024",
+    "tool_name": "calculator",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_025",
+    "tool_name": "calculator",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_026",
+    "tool_name": "document_search",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_027",
+    "tool_name": "document_search",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_028",
+    "tool_name": "document_search",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_029",
+    "tool_name": "document_search",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_030",
+    "tool_name": "document_search",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_031",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_032",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_033",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_034",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_035",
+    "tool_name": "document_search",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_036",
+    "tool_name": "document_search",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_037",
+    "tool_name": "document_search",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_038",
+    "tool_name": "document_search",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_039",
+    "tool_name": "document_search",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_040",
+    "tool_name": "document_search",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_041",
+    "tool_name": "document_search",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        "Execution provenance records actions, inputs, outputs, and failure information."
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_042",
+    "tool_name": "document_search",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        "Heart failure is a clinical syndrome involving impaired cardiac pumping."
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_043",
+    "tool_name": "document_search",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        "Tool recovery means diagnosing a failure and selecting an appropriate next action."
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_044",
+    "tool_name": "document_search",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        "Malformed output does not follow the expected format."
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_045",
+    "tool_name": "document_search",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        "Agent reliability measures correct and consistent behavior."
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_046",
+    "tool_name": "document_search",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_047",
+    "tool_name": "document_search",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_048",
+    "tool_name": "document_search",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_049",
+    "tool_name": "document_search",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_050",
+    "tool_name": "document_search",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_051",
+    "tool_name": "database_lookup",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_052",
+    "tool_name": "database_lookup",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_053",
+    "tool_name": "database_lookup",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_054",
+    "tool_name": "database_lookup",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_055",
+    "tool_name": "database_lookup",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_056",
+    "tool_name": "database_lookup",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_057",
+    "tool_name": "database_lookup",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_058",
+    "tool_name": "database_lookup",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_059",
+    "tool_name": "database_lookup",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_060",
+    "tool_name": "database_lookup",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_061",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_062",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_063",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_064",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_065",
+    "tool_name": "database_lookup",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_066",
+    "tool_name": "database_lookup",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        {
+          "name": "Amina",
+          "status": "active"
+        }
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_067",
+    "tool_name": "database_lookup",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        {
+          "name": "Bilal",
+          "status": "inactive"
+        }
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_068",
+    "tool_name": "database_lookup",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        {
+          "name": "Sara",
+          "status": "active"
+        }
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_069",
+    "tool_name": "database_lookup",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        {
+          "name": "Usman",
+          "status": "inactive"
+        }
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_070",
+    "tool_name": "database_lookup",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        {
+          "name": "Hina",
+          "status": "active"
+        }
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_071",
+    "tool_name": "database_lookup",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_072",
+    "tool_name": "database_lookup",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_073",
+    "tool_name": "database_lookup",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_074",
+    "tool_name": "database_lookup",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_075",
+    "tool_name": "database_lookup",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_076",
+    "tool_name": "file_reader",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_077",
+    "tool_name": "file_reader",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_078",
+    "tool_name": "file_reader",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_079",
+    "tool_name": "file_reader",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_080",
+    "tool_name": "file_reader",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_081",
+    "tool_name": "file_reader",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_082",
+    "tool_name": "file_reader",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_083",
+    "tool_name": "file_reader",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_084",
+    "tool_name": "file_reader",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_085",
+    "tool_name": "file_reader",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_086",
+    "tool_name": "file_reader",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_087",
+    "tool_name": "file_reader",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_088",
+    "tool_name": "file_reader",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_089",
+    "tool_name": "file_reader",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_090",
+    "tool_name": "file_reader",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_091",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        "The pilot study uses deterministic tools and four history conditions."
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_092",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        "Invalid parameters occur when inputs use the wrong format."
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_093",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        "Timeouts occur when a tool does not respond in time."
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_094",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        "Malformed output does not match the expected schema."
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_095",
+    "tool_name": "file_reader",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        "Misleading output looks valid but does not answer the task."
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_096",
+    "tool_name": "file_reader",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_097",
+    "tool_name": "file_reader",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_098",
+    "tool_name": "file_reader",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_099",
+    "tool_name": "file_reader",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_100",
+    "tool_name": "file_reader",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_101",
+    "tool_name": "data_analysis",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_102",
+    "tool_name": "data_analysis",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_103",
+    "tool_name": "data_analysis",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_104",
+    "tool_name": "data_analysis",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_105",
+    "tool_name": "data_analysis",
+    "failure_type": "invalid_parameter",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "invalid_parameter",
+    "message": "simulated invalid_parameter"
+  },
+  {
+    "scenario_id": "scenario_106",
+    "tool_name": "data_analysis",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_107",
+    "tool_name": "data_analysis",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_108",
+    "tool_name": "data_analysis",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_109",
+    "tool_name": "data_analysis",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_110",
+    "tool_name": "data_analysis",
+    "failure_type": "timeout",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "timeout",
+    "message": "simulated timeout"
+  },
+  {
+    "scenario_id": "scenario_111",
+    "tool_name": "data_analysis",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_112",
+    "tool_name": "data_analysis",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_113",
+    "tool_name": "data_analysis",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_114",
+    "tool_name": "data_analysis",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_115",
+    "tool_name": "data_analysis",
+    "failure_type": "unavailable_tool",
+    "passed": true,
+    "success": false,
+    "output": null,
+    "error_type": "unavailable_tool",
+    "message": "simulated unavailable_tool"
+  },
+  {
+    "scenario_id": "scenario_116",
+    "tool_name": "data_analysis",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        {
+          "count": 4,
+          "mean": 5.0,
+          "minimum": 2,
+          "maximum": 8
+        }
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_117",
+    "tool_name": "data_analysis",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        {
+          "count": 3,
+          "mean": 20.0,
+          "minimum": 10,
+          "maximum": 30
+        }
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_118",
+    "tool_name": "data_analysis",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        {
+          "count": 5,
+          "mean": 5.0,
+          "minimum": 1,
+          "maximum": 9
+        }
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_119",
+    "tool_name": "data_analysis",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        {
+          "count": 3,
+          "mean": 150.0,
+          "minimum": 100,
+          "maximum": 200
+        }
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_120",
+    "tool_name": "data_analysis",
+    "failure_type": "malformed_output",
+    "passed": true,
+    "success": true,
+    "output": {
+      "unexpected": [
+        {
+          "count": 4,
+          "mean": 21.0,
+          "minimum": 12,
+          "maximum": 30
+        }
+      ]
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_121",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_122",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_123",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_124",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_125",
+    "tool_name": "data_analysis",
+    "failure_type": "misleading_output",
+    "passed": true,
+    "success": true,
+    "output": "This output is valid-looking but irrelevant.",
+    "error_type": null,
+    "message": null
+  }
+]

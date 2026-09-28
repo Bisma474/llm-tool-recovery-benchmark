@@ -1,0 +1,341 @@
+[
+  {
+    "scenario_id": "scenario_021",
+    "tool_name": "calculator",
+    "arguments": {
+      "expression": "5 + 2"
+    },
+    "passed": true,
+    "output": 7,
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_022",
+    "tool_name": "calculator",
+    "arguments": {
+      "expression": "27 * 14"
+    },
+    "passed": true,
+    "output": 378,
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_023",
+    "tool_name": "calculator",
+    "arguments": {
+      "expression": "100 / 4"
+    },
+    "passed": true,
+    "output": 25,
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_024",
+    "tool_name": "calculator",
+    "arguments": {
+      "expression": "9 - 3"
+    },
+    "passed": true,
+    "output": 6,
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_025",
+    "tool_name": "calculator",
+    "arguments": {
+      "expression": "12 * 12"
+    },
+    "passed": true,
+    "output": 144,
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_046",
+    "tool_name": "document_search",
+    "arguments": {
+      "query": "provenance"
+    },
+    "passed": true,
+    "output": "Execution provenance records actions, inputs, outputs, and failure information.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_047",
+    "tool_name": "document_search",
+    "arguments": {
+      "query": "heart failure"
+    },
+    "passed": true,
+    "output": "Heart failure is a clinical syndrome involving impaired cardiac pumping.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_048",
+    "tool_name": "document_search",
+    "arguments": {
+      "query": "tool recovery"
+    },
+    "passed": true,
+    "output": "Tool recovery means diagnosing a failure and selecting an appropriate next action.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_049",
+    "tool_name": "document_search",
+    "arguments": {
+      "query": "malformed output"
+    },
+    "passed": true,
+    "output": "Malformed output does not follow the expected format.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_050",
+    "tool_name": "document_search",
+    "arguments": {
+      "query": "agent reliability"
+    },
+    "passed": true,
+    "output": "Agent reliability measures correct and consistent behavior.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_071",
+    "tool_name": "database_lookup",
+    "arguments": {
+      "record_id": 101
+    },
+    "passed": true,
+    "output": {
+      "name": "Amina",
+      "status": "active"
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_072",
+    "tool_name": "database_lookup",
+    "arguments": {
+      "record_id": 202
+    },
+    "passed": true,
+    "output": {
+      "name": "Bilal",
+      "status": "inactive"
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_073",
+    "tool_name": "database_lookup",
+    "arguments": {
+      "record_id": 303
+    },
+    "passed": true,
+    "output": {
+      "name": "Sara",
+      "status": "active"
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_074",
+    "tool_name": "database_lookup",
+    "arguments": {
+      "record_id": 404
+    },
+    "passed": true,
+    "output": {
+      "name": "Usman",
+      "status": "inactive"
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_075",
+    "tool_name": "database_lookup",
+    "arguments": {
+      "record_id": 505
+    },
+    "passed": true,
+    "output": {
+      "name": "Hina",
+      "status": "active"
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_096",
+    "tool_name": "file_reader",
+    "arguments": {
+      "filename": "study_notes_1.txt"
+    },
+    "passed": true,
+    "output": "The pilot study uses deterministic tools and four history conditions.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_097",
+    "tool_name": "file_reader",
+    "arguments": {
+      "filename": "study_notes_2.txt"
+    },
+    "passed": true,
+    "output": "Invalid parameters occur when inputs use the wrong format.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_098",
+    "tool_name": "file_reader",
+    "arguments": {
+      "filename": "study_notes_3.txt"
+    },
+    "passed": true,
+    "output": "Timeouts occur when a tool does not respond in time.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_099",
+    "tool_name": "file_reader",
+    "arguments": {
+      "filename": "study_notes_4.txt"
+    },
+    "passed": true,
+    "output": "Malformed output does not match the expected schema.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_100",
+    "tool_name": "file_reader",
+    "arguments": {
+      "filename": "study_notes_5.txt"
+    },
+    "passed": true,
+    "output": "Misleading output looks valid but does not answer the task.",
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_121",
+    "tool_name": "data_analysis",
+    "arguments": {
+      "values": [
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    "passed": true,
+    "output": {
+      "count": 4,
+      "mean": 5.0,
+      "minimum": 2,
+      "maximum": 8
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_122",
+    "tool_name": "data_analysis",
+    "arguments": {
+      "values": [
+        10,
+        20,
+        30
+      ]
+    },
+    "passed": true,
+    "output": {
+      "count": 3,
+      "mean": 20.0,
+      "minimum": 10,
+      "maximum": 30
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_123",
+    "tool_name": "data_analysis",
+    "arguments": {
+      "values": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ]
+    },
+    "passed": true,
+    "output": {
+      "count": 5,
+      "mean": 5.0,
+      "minimum": 1,
+      "maximum": 9
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_124",
+    "tool_name": "data_analysis",
+    "arguments": {
+      "values": [
+        100,
+        150,
+        200
+      ]
+    },
+    "passed": true,
+    "output": {
+      "count": 3,
+      "mean": 150.0,
+      "minimum": 100,
+      "maximum": 200
+    },
+    "error_type": null,
+    "message": null
+  },
+  {
+    "scenario_id": "scenario_125",
+    "tool_name": "data_analysis",
+    "arguments": {
+      "values": [
+        12,
+        18,
+        24,
+        30
+      ]
+    },
+    "passed": true,
+    "output": {
+      "count": 4,
+      "mean": 21.0,
+      "minimum": 12,
+      "maximum": 30
+    },
+    "error_type": null,
+    "message": null
+  }
+]
