@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and local config
+key.txt
+*.key
+*.env
+.env*
+
+# Large or raw experiment outputs
+v2/outputs/
+outputs/
+*.jsonl
+requests.jsonl
+responses.jsonl
+
+# Generated figures and caches
+figures/
+figures_corrected/
+*.png
+*.pdf
+
+# Local/editor/system files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
