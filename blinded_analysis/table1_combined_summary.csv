@@ -1,0 +1,9 @@
+condition,trials,mean_direct_recovery_score,sd_direct_recovery_score,diagnosis_rate,action_rate,mean_latency_seconds,experiment
+no_history,125,0.096,0.29577672485802853,0.0,9.6,21.95172616,Exp1_full_provenance
+raw_history,125,0.048,0.21462645719722498,0.0,4.8,19.588822240000002,Exp1_full_provenance
+plain_log,125,0.168,0.375370784433807,0.0,16.8,21.38296024,Exp1_full_provenance
+structured_provenance,125,0.72,0.7787500323616209,42.4,29.599999999999998,25.29356336,Exp1_full_provenance
+no_history,125,0.0,0.0,0.0,0.0,27.58529784,Exp2_blinded
+raw_history,125,0.12,0.37243748122249304,6.4,5.6000000000000005,19.0552876,Exp2_blinded
+plain_log,125,0.216,0.46807774374942074,13.600000000000001,8.0,18.02876264,Exp2_blinded
+structured_provenance,125,0.048,0.214626457197225,4.0,0.8,25.00579768,Exp2_blinded
