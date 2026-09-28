@@ -1,0 +1,5 @@
+condition,history,mode,episodes,successes,success_rate,responses,json_errors,schema_errors,response_errors
+A,plain,json,25,6,24.0%,99,0,20,50
+B,structured,json,25,8,32.0%,66,0,20,20
+C,plain,schema,25,11,44.0%,99,0,0,40
+D,structured,schema,25,13,52.0%,61,0,0,0

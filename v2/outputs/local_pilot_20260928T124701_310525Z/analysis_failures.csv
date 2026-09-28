@@ -1,0 +1,11 @@
+condition,failure_reason,count
+A,"Action, arguments, and answer are inconsistent. (3)",10
+A,Response does not match the response schema. (4),5
+A,"Useful tool evidence existed, but the final answer was missing or incorrect.",4
+B,No successful supported recovery.,9
+B,Response does not match the response schema. (4),5
+B,"Useful tool evidence existed, but the final answer was missing or incorrect.",3
+C,"Action, arguments, and answer are inconsistent. (3)",10
+C,"Useful tool evidence existed, but the final answer was missing or incorrect.",4
+D,No successful supported recovery.,9
+D,"Useful tool evidence existed, but the final answer was missing or incorrect.",3

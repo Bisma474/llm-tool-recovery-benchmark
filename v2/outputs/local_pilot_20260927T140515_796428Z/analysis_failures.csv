@@ -1,0 +1,8 @@
+condition,failure_reason,count
+A,Response does not match the response schema. (1),14
+A,Response does not match the response schema. (2),11
+B,Response does not match the response schema. (2),15
+B,Response does not match the response schema. (1),8
+C,No successful supported recovery.,9
+C,Tool calls are forbidden on the final-answer-only turn. (1),1
+D,No successful supported recovery.,10
