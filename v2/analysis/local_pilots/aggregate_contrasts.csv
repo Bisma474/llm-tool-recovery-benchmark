@@ -1,0 +1,3 @@
+model,json_mean_success_rate,schema_mean_success_rate,schema_minus_json_points,plain_mean_success_rate,structured_mean_success_rate,structured_minus_plain_points,interaction_d_minus_c_minus_b_minus_a_points
+llama3.2:3b,28.0%,48.0%,20.0,34.0%,42.0%,8.0,0.0
+qwen3:4b,4.0%,60.0%,56.0,30.0%,34.0%,4.0,-8.0

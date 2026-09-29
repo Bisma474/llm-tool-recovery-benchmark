@@ -1,0 +1,17 @@
+run_id,model,seed,condition,history,mode,successes,episodes,success_rate,response_errors
+local_pilot_20260927T140515_796428Z,qwen3:4b,42,A,plain,json,0,25,0.0%,36
+local_pilot_20260927T140515_796428Z,qwen3:4b,42,B,structured,json,2,25,8.0%,38
+local_pilot_20260927T140515_796428Z,qwen3:4b,42,C,plain,schema,15,25,60.0%,1
+local_pilot_20260927T140515_796428Z,qwen3:4b,42,D,structured,schema,15,25,60.0%,0
+local_pilot_20260928T141812_603243Z,qwen3:4b,43,A,plain,json,0,25,0.0%,36
+local_pilot_20260928T141812_603243Z,qwen3:4b,43,B,structured,json,2,25,8.0%,38
+local_pilot_20260928T141812_603243Z,qwen3:4b,43,C,plain,schema,15,25,60.0%,1
+local_pilot_20260928T141812_603243Z,qwen3:4b,43,D,structured,schema,15,25,60.0%,0
+local_pilot_20260928T124701_310525Z,llama3.2:3b,42,A,plain,json,6,25,24.0%,50
+local_pilot_20260928T124701_310525Z,llama3.2:3b,42,B,structured,json,8,25,32.0%,20
+local_pilot_20260928T124701_310525Z,llama3.2:3b,42,C,plain,schema,11,25,44.0%,40
+local_pilot_20260928T124701_310525Z,llama3.2:3b,42,D,structured,schema,13,25,52.0%,0
+local_pilot_20260928T134617_595431Z,llama3.2:3b,43,A,plain,json,6,25,24.0%,50
+local_pilot_20260928T134617_595431Z,llama3.2:3b,43,B,structured,json,8,25,32.0%,20
+local_pilot_20260928T134617_595431Z,llama3.2:3b,43,C,plain,schema,11,25,44.0%,40
+local_pilot_20260928T134617_595431Z,llama3.2:3b,43,D,structured,schema,13,25,52.0%,0

@@ -1,0 +1,9 @@
+model,condition,history,mode,successes,episodes,success_rate,response_errors
+llama3.2:3b,A,plain,json,12,50,24.0%,100
+llama3.2:3b,B,structured,json,16,50,32.0%,40
+llama3.2:3b,C,plain,schema,22,50,44.0%,80
+llama3.2:3b,D,structured,schema,26,50,52.0%,0
+qwen3:4b,A,plain,json,0,50,0.0%,72
+qwen3:4b,B,structured,json,4,50,8.0%,76
+qwen3:4b,C,plain,schema,30,50,60.0%,2
+qwen3:4b,D,structured,schema,30,50,60.0%,0
