@@ -58,7 +58,7 @@ The pilots used local Ollama with `qwen3:4b` and `llama3.2:3b`, temperature 0, s
 
 ## Results
 
-The main result is that schema-constrained generation improved verified task success for both models, and the success counts were stable across seeds 42 and 43:
+The main result is that schema-constrained generation improved verified task success for both models, and the success counts were stable across seeds 42 and 43. Figure artifacts for these aggregated results are saved as `v2/figures/success_by_condition.svg` and `v2/figures/success_heatmap_by_failure_type.svg`.
 
 | Model | Seeds | Condition | History | Output mode | Successes | Success rate |
 | --- | --- | --- | --- | --- | ---: | ---: |
@@ -71,18 +71,23 @@ The main result is that schema-constrained generation improved verified task suc
 | `llama3.2:3b` | 42, 43 | C | plain | schema | 22/50 | 44.0% |
 | `llama3.2:3b` | 42, 43 | D | structured | schema | 26/50 | 52.0% |
 
-For `qwen3:4b`, the scenario-type breakdown shows a clean split: schema mode solved invalid-argument, temporary-timeout, and malformed-output cases, but not persistent unavailability or stale output:
+Aggregated contrasts make the pattern clearer:
 
-| Condition | Invalid args | Offline primary | Temporary timeout | Malformed output | Stale output |
+| Model | Schema minus JSON | Structured minus plain | Interaction `(D - C) - (B - A)` |
+| --- | ---: | ---: | ---: |
+| `qwen3:4b` | +56.0 points | +4.0 points | -8.0 points |
+| `llama3.2:3b` | +20.0 points | +8.0 points | 0.0 points |
+
+The failure-type breakdown shows that schema enforcement mostly helped cases where valid executable actions were the main bottleneck. For `qwen3:4b`, schema mode solved invalid-argument, temporary-timeout, and malformed-output cases, but not persistent unavailability or stale output:
+
+| Condition | Invalid args | Offline primary | Timeout | Malformed | Stale output |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| A | 0/5 | 0/5 | 0/5 | 0/5 | 0/5 |
-| B | 1/5 | 0/5 | 1/5 | 0/5 | 0/5 |
-| C | 5/5 | 0/5 | 5/5 | 5/5 | 0/5 |
-| D | 5/5 | 0/5 | 5/5 | 5/5 | 0/5 |
+| A | 0/10 | 0/10 | 0/10 | 0/10 | 0/10 |
+| B | 2/10 | 0/10 | 2/10 | 0/10 | 0/10 |
+| C | 10/10 | 0/10 | 10/10 | 10/10 | 0/10 |
+| D | 10/10 | 0/10 | 10/10 | 10/10 | 0/10 |
 
-Schema-constrained generation improved success on invalid-argument, temporary-timeout, and malformed-output scenarios. It did not solve persistent-unavailability or stale-output scenarios. In those harder cases, the model often failed to switch to the authoritative backup source, even though the tool catalog described it.
-
-For `llama3.2:3b`, structured history gave modest gains in both JSON and schema settings. Condition D reached 13/25 compared with 11/25 for condition C, and it had no response errors. However, the model still failed all persistent-unavailability cases and most stale-output cases.
+For `llama3.2:3b`, structured history gave modest gains in both JSON and schema settings. Condition D reached 26/50 compared with 22/50 for condition C, and it had no response errors. However, the model still failed all persistent-unavailability cases and most stale-output cases.
 
 Across both models, schema enforcement helped more reliably than changing the execution-history format. Structured history was not harmful, and it helped `llama3.2:3b` slightly, but it was not the dominant effect.
 
@@ -103,6 +108,8 @@ This is a development pilot, not final paper evidence. It uses two small local m
 The harness supplies a notice that the initial attempt did not reliably complete the task. Therefore, this study evaluates recovery after a supplied unreliable attempt; it does not evaluate autonomous failure detection. The current environment also has a reliable backup source, which simplifies some recovery paths.
 
 The runs do not yet include held-out scenario templates, cluster-aware uncertainty estimates, a larger model with reliable schema enforcement, or a systematic related-work comparison. These are necessary before making a strong publication claim.
+
+Free-tier Ollama cloud candidates were also screened after the local pilots. `gemma4:cloud`, `gemma4:31b-cloud`, `gpt-oss:20b-cloud`, `gpt-oss:120b-cloud`, and `nemotron-3-nano:30b-cloud` were accessible through the local Ollama path, but did not satisfy the strict schema-conflict probe required for comparable C/D conditions. Several other cloud aliases registered but returned HTTP 402 on this account. These checks are eligibility diagnostics, not main benchmark trials, and the corresponding models are excluded from the primary result table.
 
 ## Future Work
 
