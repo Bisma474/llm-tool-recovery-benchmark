@@ -11,7 +11,7 @@ from pathlib import Path
 
 from check_ollama_api import api
 from experiment_runner import CONDITIONS, run_episode
-from recovery_harness import SCENARIOS
+from recovery_harness import SCENARIO_SETS
 
 DEFAULT_OPTIONS = {'temperature': 0, 'seed': 42, 'num_ctx': 4096, 'num_predict': 256}
 
@@ -58,6 +58,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--model', default='qwen3:4b')
     parser.add_argument('--seed', type=int, default=DEFAULT_OPTIONS['seed'])
+    parser.add_argument('--scenario-set', choices=('development', 'heldout'), default='development')
     parser.add_argument('--max-episodes', type=int, default=None,
                         help='Optional shakedown limit; omit for the full scenario x condition schedule.')
     args = parser.parse_args()
@@ -70,11 +71,13 @@ def main():
     print(f'Real local pilot: {args.model}. Output: {out}', flush=True)
     options = dict(DEFAULT_OPTIONS)
     options['seed'] = args.seed
-    schedule = [(s, c) for s in SCENARIOS for c in CONDITIONS]
+    scenarios = SCENARIO_SETS[args.scenario_set]
+    schedule = [(s, c) for s in scenarios for c in CONDITIONS]
     random.Random(20260926).shuffle(schedule)
     if args.max_episodes is not None:
         schedule = schedule[:args.max_episodes]
-    manifest = {'kind': 'development_pilot', 'status': 'RUNNING', 'model': args.model,
+    manifest = {'kind': f'{args.scenario_set}_evaluation', 'status': 'RUNNING', 'model': args.model,
+                'scenario_set': args.scenario_set,
                 'options': options, 'think': False, 'created_at_utc': now.isoformat(),
                 'python': platform.python_version(), 'platform': platform.platform(),
                 'order_seed': 20260926, 'generation_seed': args.seed, 'schedule': schedule,

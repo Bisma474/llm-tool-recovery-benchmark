@@ -1,0 +1,341 @@
+{
+  "conditions": {
+    "A": [
+      "plain",
+      "json"
+    ],
+    "B": [
+      "structured",
+      "json"
+    ],
+    "C": [
+      "plain",
+      "schema"
+    ],
+    "D": [
+      "structured",
+      "schema"
+    ]
+  },
+  "notes": "Freeze this file before running any held-out model evaluation. Do not change scenarios after observing results.",
+  "protocol": "heldout_v1",
+  "protocol_sha256": "93c74c6adbd0aa37eb61f11fe9f4a273b1ba638434be5431fb44c3a2ce65f7d0",
+  "response_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "action": {
+        "enum": [
+          "lookup_primary",
+          "lookup_backup",
+          "finish"
+        ]
+      },
+      "answer": {
+        "anyOf": [
+          {
+            "additionalProperties": false,
+            "properties": {
+              "item": {
+                "type": "string"
+              },
+              "quantity": {
+                "type": "integer"
+              },
+              "record_id": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "record_id",
+              "item",
+              "quantity"
+            ],
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "arguments": {
+        "anyOf": [
+          {
+            "additionalProperties": false,
+            "properties": {
+              "record_id": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "record_id"
+            ],
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      }
+    },
+    "required": [
+      "action",
+      "arguments",
+      "answer"
+    ],
+    "type": "object"
+  },
+  "scenario_count": 25,
+  "scenario_set": "heldout",
+  "scenarios": {
+    "heldout_invalid_arguments_clipboard": {
+      "initial_arguments": {
+        "record_id": "808"
+      },
+      "initial_tool": "lookup_primary",
+      "record_id": 808,
+      "task": "Retrieve inventory record 808 and report its record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_invalid_arguments_envelope": {
+      "initial_arguments": {
+        "record_id": "606"
+      },
+      "initial_tool": "lookup_primary",
+      "record_id": 606,
+      "task": "Retrieve inventory record 606 and report its record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_invalid_arguments_eraser": {
+      "initial_arguments": {
+        "record_id": "909"
+      },
+      "initial_tool": "lookup_primary",
+      "record_id": 909,
+      "task": "Retrieve inventory record 909 and report its record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_invalid_arguments_ruler": {
+      "initial_arguments": {
+        "record_id": "1001"
+      },
+      "initial_tool": "lookup_primary",
+      "record_id": 1001,
+      "task": "Retrieve inventory record 1001 and report its record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_invalid_arguments_scissors": {
+      "initial_arguments": {
+        "record_id": "707"
+      },
+      "initial_tool": "lookup_primary",
+      "record_id": 707,
+      "task": "Retrieve inventory record 707 and report its record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_malformed_output_clipboard": {
+      "initial_arguments": {
+        "record_id": 808
+      },
+      "initial_tool": "lookup_primary",
+      "primary_output": "malformed",
+      "record_id": 808,
+      "task": "Retrieve inventory record 808 and report its record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_malformed_output_envelope": {
+      "initial_arguments": {
+        "record_id": 606
+      },
+      "initial_tool": "lookup_primary",
+      "primary_output": "malformed",
+      "record_id": 606,
+      "task": "Retrieve inventory record 606 and report its record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_malformed_output_eraser": {
+      "initial_arguments": {
+        "record_id": 909
+      },
+      "initial_tool": "lookup_primary",
+      "primary_output": "malformed",
+      "record_id": 909,
+      "task": "Retrieve inventory record 909 and report its record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_malformed_output_ruler": {
+      "initial_arguments": {
+        "record_id": 1001
+      },
+      "initial_tool": "lookup_primary",
+      "primary_output": "malformed",
+      "record_id": 1001,
+      "task": "Retrieve inventory record 1001 and report its record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_malformed_output_scissors": {
+      "initial_arguments": {
+        "record_id": 707
+      },
+      "initial_tool": "lookup_primary",
+      "primary_output": "malformed",
+      "record_id": 707,
+      "task": "Retrieve inventory record 707 and report its record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_persistent_unavailability_clipboard": {
+      "initial_arguments": {
+        "record_id": 808
+      },
+      "initial_tool": "lookup_primary",
+      "record_id": 808,
+      "task": "Retrieve inventory record 808 and report its record_id, item, and quantity.",
+      "unavailable": [
+        "lookup_primary"
+      ]
+    },
+    "heldout_persistent_unavailability_envelope": {
+      "initial_arguments": {
+        "record_id": 606
+      },
+      "initial_tool": "lookup_primary",
+      "record_id": 606,
+      "task": "Retrieve inventory record 606 and report its record_id, item, and quantity.",
+      "unavailable": [
+        "lookup_primary"
+      ]
+    },
+    "heldout_persistent_unavailability_eraser": {
+      "initial_arguments": {
+        "record_id": 909
+      },
+      "initial_tool": "lookup_primary",
+      "record_id": 909,
+      "task": "Retrieve inventory record 909 and report its record_id, item, and quantity.",
+      "unavailable": [
+        "lookup_primary"
+      ]
+    },
+    "heldout_persistent_unavailability_ruler": {
+      "initial_arguments": {
+        "record_id": 1001
+      },
+      "initial_tool": "lookup_primary",
+      "record_id": 1001,
+      "task": "Retrieve inventory record 1001 and report its record_id, item, and quantity.",
+      "unavailable": [
+        "lookup_primary"
+      ]
+    },
+    "heldout_persistent_unavailability_scissors": {
+      "initial_arguments": {
+        "record_id": 707
+      },
+      "initial_tool": "lookup_primary",
+      "record_id": 707,
+      "task": "Retrieve inventory record 707 and report its record_id, item, and quantity.",
+      "unavailable": [
+        "lookup_primary"
+      ]
+    },
+    "heldout_plausible_incorrect_output_clipboard": {
+      "initial_arguments": {
+        "record_id": 808
+      },
+      "initial_tool": "lookup_primary",
+      "primary_output": "stale",
+      "record_id": 808,
+      "task": "Retrieve inventory record 808 and report its current record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_plausible_incorrect_output_envelope": {
+      "initial_arguments": {
+        "record_id": 606
+      },
+      "initial_tool": "lookup_primary",
+      "primary_output": "stale",
+      "record_id": 606,
+      "task": "Retrieve inventory record 606 and report its current record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_plausible_incorrect_output_eraser": {
+      "initial_arguments": {
+        "record_id": 909
+      },
+      "initial_tool": "lookup_primary",
+      "primary_output": "stale",
+      "record_id": 909,
+      "task": "Retrieve inventory record 909 and report its current record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_plausible_incorrect_output_ruler": {
+      "initial_arguments": {
+        "record_id": 1001
+      },
+      "initial_tool": "lookup_primary",
+      "primary_output": "stale",
+      "record_id": 1001,
+      "task": "Retrieve inventory record 1001 and report its current record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_plausible_incorrect_output_scissors": {
+      "initial_arguments": {
+        "record_id": 707
+      },
+      "initial_tool": "lookup_primary",
+      "primary_output": "stale",
+      "record_id": 707,
+      "task": "Retrieve inventory record 707 and report its current record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_temporary_timeout_clipboard": {
+      "initial_arguments": {
+        "record_id": 808
+      },
+      "initial_tool": "lookup_primary",
+      "primary_timeouts": 1,
+      "record_id": 808,
+      "task": "Retrieve inventory record 808 and report its record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_temporary_timeout_envelope": {
+      "initial_arguments": {
+        "record_id": 606
+      },
+      "initial_tool": "lookup_primary",
+      "primary_timeouts": 1,
+      "record_id": 606,
+      "task": "Retrieve inventory record 606 and report its record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_temporary_timeout_eraser": {
+      "initial_arguments": {
+        "record_id": 909
+      },
+      "initial_tool": "lookup_primary",
+      "primary_timeouts": 1,
+      "record_id": 909,
+      "task": "Retrieve inventory record 909 and report its record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_temporary_timeout_ruler": {
+      "initial_arguments": {
+        "record_id": 1001
+      },
+      "initial_tool": "lookup_primary",
+      "primary_timeouts": 1,
+      "record_id": 1001,
+      "task": "Retrieve inventory record 1001 and report its record_id, item, and quantity.",
+      "unavailable": []
+    },
+    "heldout_temporary_timeout_scissors": {
+      "initial_arguments": {
+        "record_id": 707
+      },
+      "initial_tool": "lookup_primary",
+      "primary_timeouts": 1,
+      "record_id": 707,
+      "task": "Retrieve inventory record 707 and report its record_id, item, and quantity.",
+      "unavailable": []
+    }
+  }
+}

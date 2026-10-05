@@ -65,6 +65,11 @@ _RECORDS = {
     303: {'record_id': 303, 'item': 'folder', 'quantity': 42},
     404: {'record_id': 404, 'item': 'marker', 'quantity': 29},
     505: {'record_id': 505, 'item': 'binder', 'quantity': 13},
+    606: {'record_id': 606, 'item': 'envelope', 'quantity': 31},
+    707: {'record_id': 707, 'item': 'scissors', 'quantity': 8},
+    808: {'record_id': 808, 'item': 'clipboard', 'quantity': 24},
+    909: {'record_id': 909, 'item': 'eraser', 'quantity': 19},
+    1001: {'record_id': 1001, 'item': 'ruler', 'quantity': 12},
 }
 
 
@@ -122,6 +127,41 @@ def _extra_scenarios() -> dict:
 SCENARIOS.update(_extra_scenarios())
 
 
+def _heldout_scenarios() -> dict:
+    """Locked evaluation scenarios using unseen records and new variants."""
+    records = [(606, 'envelope'), (707, 'scissors'), (808, 'clipboard'),
+               (909, 'eraser'), (1001, 'ruler')]
+    scenarios = {}
+    for record_id, label in records:
+        task = f'Retrieve inventory record {record_id} and report its record_id, item, and quantity.'
+        scenarios[f'heldout_invalid_arguments_{label}'] = {
+            'task': task, 'record_id': record_id, 'initial_tool': 'lookup_primary',
+            'initial_arguments': {'record_id': str(record_id)}, 'unavailable': (),
+        }
+        scenarios[f'heldout_persistent_unavailability_{label}'] = {
+            'task': task, 'record_id': record_id, 'initial_tool': 'lookup_primary',
+            'initial_arguments': {'record_id': record_id}, 'unavailable': ('lookup_primary',),
+        }
+        scenarios[f'heldout_temporary_timeout_{label}'] = {
+            'task': task, 'record_id': record_id, 'initial_tool': 'lookup_primary',
+            'initial_arguments': {'record_id': record_id}, 'unavailable': (), 'primary_timeouts': 1,
+        }
+        scenarios[f'heldout_malformed_output_{label}'] = {
+            'task': task, 'record_id': record_id, 'initial_tool': 'lookup_primary',
+            'initial_arguments': {'record_id': record_id}, 'unavailable': (), 'primary_output': 'malformed',
+        }
+        scenarios[f'heldout_plausible_incorrect_output_{label}'] = {
+            'task': f'Retrieve inventory record {record_id} and report its current record_id, item, and quantity.',
+            'record_id': record_id, 'initial_tool': 'lookup_primary',
+            'initial_arguments': {'record_id': record_id}, 'unavailable': (), 'primary_output': 'stale',
+        }
+    return scenarios
+
+
+HELDOUT_SCENARIOS = _heldout_scenarios()
+SCENARIO_SETS = {'development': SCENARIOS, 'heldout': HELDOUT_SCENARIOS}
+
+
 @dataclass
 class ToolResult:
     success: bool
@@ -137,12 +177,13 @@ class Episode:
     """
 
     def __init__(self, scenario_id: str, max_attempts: int = 3):
-        if scenario_id not in SCENARIOS:
+        if scenario_id not in SCENARIOS and scenario_id not in HELDOUT_SCENARIOS:
             raise ValueError(f'Unknown scenario: {scenario_id}')
         if type(max_attempts) is not int or max_attempts < 1:
             raise ValueError('max_attempts must be a positive integer')
         self.scenario_id = scenario_id
-        self._scenario = deepcopy(SCENARIOS[scenario_id])
+        scenario_map = HELDOUT_SCENARIOS if scenario_id in HELDOUT_SCENARIOS else SCENARIOS
+        self._scenario = deepcopy(scenario_map[scenario_id])
         self._unavailable = frozenset(self._scenario['unavailable'])
         self._timeouts_remaining = self._scenario.get('primary_timeouts', 0)
         self.max_attempts = max_attempts
