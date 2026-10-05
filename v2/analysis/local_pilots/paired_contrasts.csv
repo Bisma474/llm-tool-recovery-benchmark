@@ -1,0 +1,7 @@
+model,contrast,scenario_clusters,estimate_percentage_points,bootstrap_95_low_points,bootstrap_95_high_points
+llama3.2:3b,schema_minus_json,25,20.00,4.00,36.00
+llama3.2:3b,structured_minus_plain,25,8.00,-12.00,28.00
+llama3.2:3b,interaction,25,0.00,0.00,0.00
+qwen3:4b,schema_minus_json,25,56.00,36.00,74.00
+qwen3:4b,structured_minus_plain,25,4.00,0.00,10.00
+qwen3:4b,interaction,25,-8.00,-20.00,0.00
