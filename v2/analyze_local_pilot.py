@@ -18,6 +18,7 @@ SCENARIO_TYPES = (
 
 
 def scenario_type(scenario_id):
+    scenario_id = scenario_id.removeprefix('heldout_')
     for prefix in SCENARIO_TYPES:
         if scenario_id == prefix or scenario_id.startswith(prefix + '_'):
             return prefix
